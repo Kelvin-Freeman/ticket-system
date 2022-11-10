@@ -1,15 +1,10 @@
 
 import React from 'react'
-// import {Routes, Route} from 'react-router-dom'
-// import { getUser } from './utilities/users-service';
-// import AuthPage from './pages/AuthPage';
-// import NewOrderPage from './pages/NewOrderPage';
-// import OrderHistoryPage from './pages/OrderHistoryPage';
-// import NavBar from './components/NavBar';
 import './App.css';
-// import { Entry } from  '../../Ticket-System/src/pages/entry/Entry.page'
 import {DefaultLayout} from '../../Ticket-System/src/layout/DefaultLayout'
 import {Dashboard} from './pages/dashboard/Dashboard.page'
+import { Entry } from  '../../Ticket-System/src/pages/entry/Entry.page'
+import { AddTicket } from './pages/new-ticket/AddTicket.page';
 
 function App() {
   
@@ -17,7 +12,8 @@ function App() {
    <div className="App">
     {/* <Entry /> */}
     <DefaultLayout>
-      <Dashboard />
+      {/* <Dashboard /> */}
+      <AddTicket />
     </DefaultLayout>
     </div>
   );
