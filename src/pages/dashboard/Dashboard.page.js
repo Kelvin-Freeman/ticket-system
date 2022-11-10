@@ -1,5 +1,6 @@
 import React from "react"
 import { Container, Row, Col, Button } from "react-bootstrap"
+import { TicketTable} from "../../components/ticket-table/TicketTable.comp"
 
 export const Dashboard = () => {
     return(
@@ -25,8 +26,8 @@ export const Dashboard = () => {
             <hr /> 
 
             <Row>
-                <Col className="mt-2">
-                    table here
+                <Col className="recent-ticket">
+                    <TicketTable />
                 </Col>
             </Row>
 
