@@ -7,7 +7,7 @@ import React from 'react'
 // import OrderHistoryPage from './pages/OrderHistoryPage';
 // import NavBar from './components/NavBar';
 import './App.css';
-import { Entry } from  '../../Ticket-System/src/pages/entry/Entry.page'
+// import { Entry } from  '../../Ticket-System/src/pages/entry/Entry.page'
 import {DefaultLayout} from '../../Ticket-System/src/layout/DefaultLayout'
 import {Dashboard} from './pages/dashboard/Dashboard.page'
 
