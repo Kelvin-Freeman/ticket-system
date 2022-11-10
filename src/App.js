@@ -9,14 +9,17 @@ import React from 'react'
 import './App.css';
 import { Entry } from  '../../Ticket-System/src/pages/entry/Entry.page'
 import {DefaultLayout} from '../../Ticket-System/src/layout/DefaultLayout'
+import {Dashboard} from './pages/dashboard/Dashboard.page'
 
 function App() {
   
   return (
    <div className="App">
     {/* <Entry /> */}
-    <DefaultLayout />
-   </div>
+    <DefaultLayout>
+      <Dashboard />
+    </DefaultLayout>
+    </div>
   );
 }
 
