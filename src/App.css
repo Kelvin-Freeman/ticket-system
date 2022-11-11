@@ -52,6 +52,7 @@ header {
 }
 
 main {
+  margin-top: 20px;
   grid-area: main;
   min-height: 88vh;
 }

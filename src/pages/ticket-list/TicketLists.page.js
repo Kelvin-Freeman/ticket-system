@@ -3,16 +3,29 @@ import {Container, Row, Col, Button} from 'react-bootstrap'
 import { PageBreadcrumb } from '../../components/breadcrumb/Breadcrumb.comp'
 import {SearchForm} from '../../../src/components/search-form/SearchForm.comp'
 import { TicketTable } from '../../../src/components/ticket-table/TicketTable.comp'
-import tickets from '../../../src/assets/data/dummy-tickets.json'
+import tickets from '../../assets/data/dummy-tickets.json'
 
 export const TicketLists = () => {
     const [str, setStr] = useState('')
+    const [dispTicket, setDispTicket] = useState(tickets)
 
-    useEffect(() => {}, [str]);
+    useEffect(() => {}, [str, dispTicket]);
 
     const handleOnChange = e =>{
-        setStr(e.target.value)
+        const {value} = e.target
+        // console.log(value)
+        setStr(value) 
+        searchTicket(value)   
     }
+
+    const searchTicket = (sttr) => {
+        const displayTickets = tickets.filter((row) => 
+          row.subject.toLowerCase().includes(sttr.toLowerCase())
+          );
+        
+        
+        setDispTicket(displayTickets)
+    };
     return(
         <Container>
             <Row>
@@ -31,7 +44,7 @@ export const TicketLists = () => {
            <hr /> 
            <Row>
                 <Col>
-                <TicketTable tickets={tickets} />
+                <TicketTable tickets={dispTicket} />
                 </Col>
             </Row>
         </Container>
