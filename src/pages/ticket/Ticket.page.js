@@ -3,6 +3,7 @@ import {Container, Row, Col, Button} from 'react-bootstrap'
 import { PageBreadcrumb } from '../../components/breadcrumb/Breadcrumb.comp'
 import tickets from '../../assets/data/dummy-tickets.json'
 import { MessageHistory } from '../../components/message-history/MessageHistory.comp'
+import { UpdateTicket } from '../../components/update-ticket/UpdateTicket.comp'
 
 const ticket = tickets[0]
 
@@ -24,9 +25,16 @@ export const Ticket = () => {
                     <Button variant='outline-danger'>Close Ticket</Button>
                 </Col>
             </Row>
-            <Row>
+            <Row className='mt-4'>
                 <Col>
                     <MessageHistory msg={ticket.history}/>
+                </Col>
+            </Row>
+            <hr />
+
+            <Row className='mt-4'>
+                <Col>
+                    <UpdateTicket />
                 </Col>
             </Row>
         </Container>
