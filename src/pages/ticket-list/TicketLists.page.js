@@ -27,6 +27,7 @@ export const TicketLists = () => {
         setDispTicket(displayTickets)
     };
     return(
+        <div>
         <Container>
             <Row>
                 <Col>
@@ -48,5 +49,6 @@ export const TicketLists = () => {
                 </Col>
             </Row>
         </Container>
+        </div>
     )
 }
