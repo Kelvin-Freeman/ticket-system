@@ -1,7 +1,7 @@
 
 
-// import SignUpForm from "../components/SignUpForm"
-// // import LoginForm from "../components/LoginForm"
+// import SignUpForm from "../components/sign-up-form/SignUpForm"
+// import LoginForm from "../components/login/Login.comp"
 // import {useState, useEffect} from 'react'
 // import { Link } from "react-router-dom"
 

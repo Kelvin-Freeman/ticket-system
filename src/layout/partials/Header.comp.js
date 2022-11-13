@@ -28,7 +28,7 @@ export const Header = () => {
                         <LinkContainer to="/dashboard"><Nav.Link>Dashboard</Nav.Link></LinkContainer>
                         <LinkContainer to="/tickets"><Nav.Link>Tickets</Nav.Link></LinkContainer>
                         <Nav.Link onClick={redirectToLogin}>Logout</Nav.Link>
-
+                        
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
