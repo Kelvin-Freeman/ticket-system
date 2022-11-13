@@ -5,6 +5,7 @@ import tickets from '../../assets/data/dummy-tickets.json'
 import { MessageHistory } from '../../components/message-history/MessageHistory.comp'
 import { UpdateTicket } from '../../components/update-ticket/UpdateTicket.comp'
 
+
 const ticket = tickets[0]
 
 export const Ticket = () => {
