@@ -64,7 +64,7 @@ export const AddTicketForm = ({handleOnSubmit, handleOnChange, frmDataError, frm
                     <br />
                     
                     <div className="d-grid gap-4">
-                    <Button type="submit" variant="info" size="lg">Login</Button>
+                    <Button type="submit" variant="info" size="lg">Submit</Button>
                     </div>
                 </Form>
                 

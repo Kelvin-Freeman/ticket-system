@@ -57,7 +57,7 @@ export const Entry = () => {
   }
 
     return (
-        <div className='entry-page bg-info'>
+        <div className='entry-page bg-white'>
           {frmLoad === 'login' && ( <LoginForm
            handleOnChange={handleOnChange} 
           handleOnSubmit={handleOnSubmit}
