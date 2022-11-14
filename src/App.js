@@ -25,7 +25,7 @@ function App() {
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/add-ticket" element={<AddTicket />} />
               <Route path="/tickets" element={<TicketLists />} />
-              <Route path="/ticket/:tid" element={<Ticket />} />
+              <Route path="/ticket/:tId" element={<Ticket />} />
             </Route>
               <Route path="/" element={<Entry />} />
              </Routes>
