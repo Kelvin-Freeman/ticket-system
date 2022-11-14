@@ -31,8 +31,12 @@ app.get('/api/orders', (req, res) => {
 
 
 // Catch All to serve the production app
+// app.get('/*', (req, res) => {
+//     res.send(path.join(__dirname, 'build', 'index.html'))
+// })
+
 app.get('/*', (req, res) => {
-    res.send(path.join(__dirname, 'build', 'index.html'))
+    res.json({ message: "Hello from server!" })
 })
 
 
